@@ -6,7 +6,7 @@ vagrant  destroy -f  || exit $?
 vagrant  up          || exit $?
 vagrant  halt
 
-vagrant  package   --output ../ubuntu-develop.box  default
+vagrant  package   --output ../ubuntu-gui.box  default
 
 popd
 set  +x
@@ -16,5 +16,5 @@ To add package into box list, run:
 _EOF_
 
 cat  << _EOF_
-vagrant  box  add  --name ubuntu/bionic64-develop   ubuntu-develop.box
+vagrant  box  add  --name ubuntu/bionic64-gui   ubuntu-gui.box
 _EOF_
