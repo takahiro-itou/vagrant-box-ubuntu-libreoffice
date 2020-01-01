@@ -1,12 +1,18 @@
 #! /bin/bash  -xue
 
+boxFile='ubuntu-gui.box'
+boxName='ubuntu-bionic64-gui'
+
+# Account Name of Vagrant Cloud.
+vcUser='takahiro-itou'
+
 pushd  vagrant
 
 vagrant  destroy -f  || exit $?
 vagrant  up          || exit $?
 vagrant  halt
 
-vagrant  package   --output ../ubuntu-gui.box  default
+vagrant  package   --output ../${boxFile}  default
 
 popd
 set  +x
@@ -16,5 +22,5 @@ To add package into box list, run:
 _EOF_
 
 cat  << _EOF_
-vagrant  box  add  --name ubuntu/bionic64-gui   ubuntu-gui.box
+vagrant  box  add  --name ${vcUser}/${boxName}  ${boxFile}
 _EOF_
