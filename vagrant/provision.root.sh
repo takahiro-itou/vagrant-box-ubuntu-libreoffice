@@ -8,10 +8,10 @@ sudo  apt  update
 
 export DEBIAN_FRONTEND=noninteractive
 sudo  -E  apt  upgrade -y
-sudo  -E  apt  install -y  build-essential  mercurial
+sudo  apt  install -y  build-essential  mercurial
 
-sudo  -E  apt  install -y  ubuntu-desktop
-sudo  -E  apt  install -y  qemu
+sudo  apt  install -y  ubuntu-desktop
+sudo  apt  install -y  qemu
 
 # clean up
 sudo  rm -f  /var/lib/apt/lists/lock
