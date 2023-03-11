@@ -10,28 +10,28 @@ export DEBIAN_FRONTEND=noninteractive
 sudo  -E  apt  upgrade -y
 
 sudo  apt-get  install -y   \
+    autoconf                \
+    automake                \
     build-essential         \
+    clang                   \
     cmake                   \
     doxygen                 \
     emacs                   \
-    git                     \
-    mercurial               \
-    autoconf                \
-    automake                \
-    clang                   \
+    fcitx                   \
+    fcitx-mozc              \
     gcc                     \
     g++                     \
+    git                     \
+    ibus-mozc               \
+    language-pack-ja-base   \
+    language-pack-ja        \
     libcppunit-dev          \
     libtool                 \
     ncurses-dev             \
     make                    \
-    time                    \
+    mercurial               \
     sudo                    \
-    language-pack-ja-base   \
-    language-pack-ja        \
-    fcitx                   \
-    fcitx-mozc              \
-    ibus-mozc               \
+    time                    \
     ;
 
 sudo  apt-get  install -y  ubuntu-desktop
