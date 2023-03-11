@@ -12,30 +12,30 @@ sudo  -E  apt  upgrade -y
 sudo  apt-get  install -y   \
     ant                                 \
     ant-optional                        \
-    autoconf                \
-    automake                \
+    autoconf                            \
+    automake                            \
     bison                               \
-    build-essential         \
+    build-essential                     \
     ccache                              \
-    clang                   \
-    cmake                   \
+    clang                               \
+    cmake                               \
     default-jdk                         \
-    doxygen                 \
-    graphviz                            \
-    emacs                   \
-    fcitx                   \
-    fcitx-mozc              \
+    doxygen                             \
+    emacs                               \
+    fcitx                               \
+    fcitx-mozc                          \
     flex                                \
-    gcc                     \
-    g++                     \
+    g++                                 \
+    gcc                                 \
     git                                 \
     gperf                               \
-    ibus-mozc               \
+    graphviz                            \
+    ibus-mozc                           \
     junit4                              \
-    language-pack-ja-base   \
-    language-pack-ja        \
+    language-pack-ja                    \
+    language-pack-ja-base               \
     libavahi-client-dev                 \
-    libcppunit-dev          \
+    libcppunit-dev                      \
     libcups2-dev                        \
     libfontconfig1-dev                  \
     libgstreamer1.0-dev                 \
@@ -48,21 +48,21 @@ sudo  apt-get  install -y   \
     libkf5windowsystem-dev              \
     libkrb5-dev                         \
     libnss3-dev                         \
-    libtool                 \
+    libtool                             \
     libx11-dev                          \
     libxml2-utils                       \
     libxrandr-dev                       \
     libxslt1-dev                        \
     libxt-dev                           \
-    ncurses-dev             \
-    make                    \
-    mercurial               \
+    make                                \
+    mercurial                           \
     nasm                                \
+    ncurses-dev                         \
     python3                             \
     python3-dev                         \
     qtbase5-dev                         \
-    sudo                    \
-    time                    \
+    sudo                                \
+    time                                \
     xsltproc                            \
     zip                                 \
     ;
