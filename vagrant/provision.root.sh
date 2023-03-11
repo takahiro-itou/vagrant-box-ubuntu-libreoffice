@@ -4,10 +4,10 @@ echo  Provisioning $HOSTNAME
 
 sudo  timedatectl  set-timezone Asia/Tokyo
 
-sudo  apt  update
+sudo  apt-get  update
 
 export DEBIAN_FRONTEND=noninteractive
-sudo  -E  apt  upgrade -y
+sudo  -E  apt-get  upgrade -y
 
 sudo  apt-get  install -y   \
     ant                                 \
