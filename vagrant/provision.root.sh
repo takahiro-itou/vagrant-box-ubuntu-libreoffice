@@ -26,7 +26,9 @@ sudo  apt-get  install -y   \
     fcitx-mozc                          \
     flex                                \
     g++                                 \
+    g++-12                              \
     gcc                                 \
+    gcc-12                              \
     git                                 \
     gperf                               \
     graphviz                            \
@@ -48,6 +50,7 @@ sudo  apt-get  install -y   \
     libkf5windowsystem-dev              \
     libkrb5-dev                         \
     libnss3-dev                         \
+    libqt5x11extras5-dev                \
     libtool                             \
     libx11-dev                          \
     libxml2-utils                       \
@@ -58,6 +61,7 @@ sudo  apt-get  install -y   \
     mercurial                           \
     nasm                                \
     ncurses-dev                         \
+    openjdk-17-jdk                      \
     python3                             \
     python3-dev                         \
     qtbase5-dev                         \
@@ -76,6 +80,11 @@ sudo  apt-get  install -y   \
 
 sudo  apt-get  install -y  ubuntu-desktop
 sudo  apt-get  install -y  qemu
+
+sudo  update-alternatives --install             \
+    /usr/bin/gcc gcc /usr/bin/gcc-12 60         \
+    --slave /usr/bin/g++ g++ /usr/bin/g++-12    \
+    ;
 
 # clean up
 sudo  apt-get  -y  --purge  autoremove
