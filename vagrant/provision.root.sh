@@ -62,9 +62,16 @@ sudo  apt-get  install -y   \
     python3-dev                         \
     qtbase5-dev                         \
     sudo                                \
+    systemd-timesyncd                   \
     time                                \
     xsltproc                            \
     zip                                 \
+                                        \
+    language-pack-ja-base               \
+    language-pack-ja                    \
+    fcitx                               \
+    fcitx-mozc                          \
+    ibus-mozc                           \
     ;
 
 sudo  apt-get  install -y  ubuntu-desktop
