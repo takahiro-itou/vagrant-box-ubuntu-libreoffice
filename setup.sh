@@ -1,10 +1,11 @@
 #! /bin/bash  -xue
 
-box_file='ubuntu-libreoffice.box'
-box_name='ubuntu-focal64-libreoffice'
+box_name='ubuntu-jammy64-libreoffice'
+box_version='v1.1.0'
+box_file="${box_name}.${box_version}.box"
 
 # Account Name of Vagrant Cloud.
-vcUser='takahiro-itou'
+vc_user='takahiro-itou'
 
 pushd  vagrant
 
@@ -22,5 +23,5 @@ To add package into box list, run:
 _EOF_
 
 cat  << _EOF_
-vagrant  box  add  --name ${vcUser}/${box_name}  ${box_file}
+vagrant  box  add  --name ${vc_user}/${box_name}  ${box_file}
 _EOF_
